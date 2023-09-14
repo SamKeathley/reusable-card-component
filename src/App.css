@@ -1,0 +1,29 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(to bottom, #e58a00, #000);
+  background-size: cover;
+  padding: 2rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+  }
+
+@media (max-width: 768px) {
+  .App {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card-container {
+    flex-direction: column;
+    height: 100%;
+  }
+}
